@@ -542,7 +542,7 @@ Possible improvements:
 
 # 👨‍💻 Author
 
-**RAVI VENKATA PUSHPA LATHA**
+**PRASUNA SAHITHI LAKKIMSETTI**
 
 Machine Learning Project  
 **Human Development Index Prediction**
