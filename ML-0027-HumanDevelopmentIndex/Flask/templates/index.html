@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HDI Score Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h2>🌍 HDI Score Prediction</h2>
+
+<p class="subtitle">
+    Human Development Index Prediction Using Machine Learning
+</p>
+
+
+<form action="/predict" method="post">
+
+
+<label>Life Expectancy</label>
+
+<input type="text"
+       name="life_expectancy"
+       placeholder="Enter life expectancy"
+       required>
+
+
+
+<label>Expected Years of Schooling</label>
+
+<input type="text"
+       name="expected_schooling"
+       placeholder="Enter expected years of schooling"
+       required>
+
+
+
+<label>Mean Years of Schooling</label>
+
+<input type="text"
+       name="mean_schooling"
+       placeholder="Enter mean years of schooling"
+       required>
+
+
+
+<label>GNI per Capita</label>
+
+<input type="text"
+       name="gni"
+       placeholder="Enter GNI per capita"
+       required>
+
+
+
+<input type="submit" value="Predict">
+
+
+</form>
+
+
+
+{% if prediction_text %}
+
+<div class="result">
+
+{{ prediction_text }}
+
+</div>
+
+{% endif %}
+
+
+
+</div>
+
+
+<div class="footer">
+
+Machine Learning Powered Human Development Analysis
+
+</div>
+
+
+</body>
+
+</html>

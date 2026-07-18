@@ -1,0 +1,344 @@
+/* =====================================
+   HDI Prediction Modern UI
+   ===================================== */
+
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+}
+
+
+
+/* Main Prediction Card */
+
+.container {
+
+    width: 500px;
+
+    background: rgba(255,255,255,0.95);
+
+    backdrop-filter: blur(10px);
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow:
+    0 25px 50px rgba(0,0,0,0.25);
+
+    animation: slide 0.8s ease;
+
+}
+
+
+
+/* Card Animation */
+
+@keyframes slide {
+
+    from {
+
+        transform: translateY(-50px);
+
+        opacity: 0;
+
+    }
+
+
+    to {
+
+        transform: translateY(0);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+/* Main Heading */
+
+h2 {
+
+    text-align: center;
+
+    color: #333;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* Subtitle */
+
+.subtitle {
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 15px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+/* Labels */
+
+label {
+
+    display: block;
+
+    color: #444;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+
+
+/* Input Fields */
+
+input[type="text"] {
+
+    width: 100%;
+
+    padding: 14px 15px;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    border: 2px solid #ddd;
+
+    font-size: 15px;
+
+    transition: all 0.3s ease;
+
+}
+
+
+
+input[type="text"]:focus {
+
+    outline: none;
+
+    border-color: #667eea;
+
+    box-shadow:
+
+    0 0 12px rgba(102,126,234,0.5);
+
+}
+
+
+
+/* Predict Button */
+
+input[type="submit"] {
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+
+    background: linear-gradient(
+
+        135deg,
+
+        #667eea,
+
+        #764ba2
+
+    );
+
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+input[type="submit"]:hover {
+
+
+    transform:translateY(-3px);
+
+
+    box-shadow:
+
+    0 15px 25px rgba(0,0,0,0.25);
+
+
+}
+
+
+
+/* Prediction Result */
+
+.result {
+
+
+    margin-top:30px;
+
+
+    padding:20px;
+
+
+    border-radius:15px;
+
+
+    background:#e8fff0;
+
+
+    border-left:6px solid #2ecc71;
+
+
+    color:#1e8449;
+
+
+    text-align:center;
+
+
+    font-size:22px;
+
+
+    font-weight:bold;
+
+
+    animation: resultAnimation 0.5s ease;
+
+
+}
+
+
+
+@keyframes resultAnimation {
+
+
+    from {
+
+        opacity:0;
+
+        transform:scale(0.8);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+
+}
+
+
+
+/* Footer */
+
+
+.footer {
+
+
+    position:fixed;
+
+
+    bottom:20px;
+
+
+    color:white;
+
+
+    font-size:15px;
+
+
+    letter-spacing:1px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+/* Responsive Design */
+
+
+@media(max-width:600px){
+
+
+    .container{
+
+
+        width:100%;
+
+        padding:25px;
+
+
+    }
+
+
+    h2{
+
+        font-size:25px;
+
+    }
+
+
+}
